@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+  height: 100vh;
+}
+
+.card {
+  background: hsl(244, 38%, 16%);
+  display: block;
+  border-radius: 5px;
+}
+
+.content .text {
+  width: 70%;
+  /* height: min-content; */
+  margin: 50px auto;
+}
+
+.content .text h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.content .text span {
+  color: hsl(277, 64%, 61%);
+}
+
+.content .text .p1 {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  width: 80%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  margin-bottom: 65px;
+}
+.member {
+  color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: min-content;
+}
+
+.member .companis,
+.member .template,
+.member .queris {
+  width: 100px;
+}
+
+.text .member .txt-mem {
+  color: hsl(0, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-family: inter, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+/* .image img {
+  height: 100%;
+} */
+
+.image {
+  background-image: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  mix-blend-mode: hard-light;
+  position: relative;
+  width: 100%;
+  /* height: 400px; */
+
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsl(277, 64%, 61%);
+  opacity: 0.5;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px){
+  .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .content {
+    align-self: center;
+  }
+  .image {
+    width: 100%;
+    position: relative;
+      /* bottom: 0;
+      left: 0;
+  top: 0; */
+  }
+
+}
